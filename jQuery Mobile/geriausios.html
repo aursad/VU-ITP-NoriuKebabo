@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex, follow">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Geriausios - Noriu kebabo!</title>
+    <link rel="stylesheet"  href="css/themes/default/jquery.mobile-1.3.2.min.css">
+    <link rel="stylesheet"  href="css/themes/default/info.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+    <script src="js/jquery.js"></script>
+    <script src="demos/_assets/js/index.js"></script>
+    <script src="js/jquery.mobile-1.3.2.min.js"></script>
+    <script>
+
+	</script>
+</head>
+<body>
+<div data-role="page">
+    <div data-role="header" data-theme="c">
+        <h1>Noriu kebabo!</h1>
+        <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
+    </div>
+    <!-- panel -->
+	<div data-role="panel" id="left-panel">
+        <ul data-role="listview" data-theme="d" data-icon="false">
+            <li>
+                <form>
+                    <input type="search" name="search-1" id="search-1" value="" placeholder="Paieška">
+                </form>
+            </li>
+            <li data-role="list-divider">Meniu:</li>
+            <li><a href="index.html">Pagrindinis</a></li>
+            <li><a href="naujausios.html" data-transition="slide">Naujausios</a></li>
+            <li><a href="geriausios.html" data-transition="slide">Geriausios</a></li>
+            <li><a href="siulyti-vieta.html" data-transition="slide">Pasiūlyti vietą</a></li>
+            <li><a href="#">Pranešti netikslumą</a></li>
+            <li><a href="kontaktai.html" data-transition="slide">Kontaktai</a></li>
+            <li data-role="list-divider">Sistema</li>
+            <li><a href="#pop-login" data-rel="popup" data-position-to="window">Prisijungti</a></li>
+            <li><a href="#pop-register" data-rel="popup" data-position-to="window">Registruotis</a></li>
+        </ul>
+	</div>
+    <!-- /panel -->
+    <!-- popup-login -->
+    <div data-role="popup" id="pop-login" data-overlay-theme="a" data-theme="a" data-dismissible="false" style="max-width:400px;" class="ui-corner-all">
+        <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+        <form>
+            <div style="padding:10px 20px;">
+                <h3>Suveskite prisijungimo duomenis</h3>
+                <label for="un" class="ui-hidden-accessible">Vartojojo vardas:</label>
+                <input type="text" name="user" id="un" value="" placeholder="Vartojojo vardas" data-theme="a">
+                <label for="pw" class="ui-hidden-accessible">Slaptažodis:</label>
+                <input type="password" name="pass" id="pw" value="" placeholder="Slaptažodis" data-theme="a">
+                <button type="submit" data-theme="b" data-icon="check">Prisijungti</button>
+            </div>
+        </form>
+    </div>
+    <!-- /popup-login -->
+    <!-- popup-register -->
+    <div data-role="popup" id="pop-register" data-overlay-theme="a" data-theme="a" data-dismissible="false" style="max-width:400px;" class="ui-corner-all">
+        <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+        <form>
+            <div style="padding:10px 20px;">
+                <h3>Registracija sistemoje</h3>
+                <label for="reg-username" class="ui-hidden-accessible">Vartojojo vardas:</label>
+                <input type="text" name="user" id="reg-username" value="" placeholder="Vartojojo vardas" data-theme="a">
+                <label for="reg-password" class="ui-hidden-accessible">Slaptažodis:</label>
+                <input type="password" name="pass" id="reg-password" value="" placeholder="Slaptažodis" data-theme="a">
+                <label for="reg-email" class="ui-hidden-accessible">El.paštas:</label>
+                <input type="email" data-clear-btn="true" name="email-2" id="reg-email" value="" placeholder="El.pašto adresas" data-theme="a">
+                <button type="submit" data-theme="b" data-icon="check">Registruotis</button>
+            </div>
+        </form>
+    </div>
+    <!-- /popup-register -->
+	<div data-role="content" >
+        <ul data-role="listview" data-split-icon="home" data-split-theme="d" data-inset="true">
+            <li><a href="kebabas.html" data-transition="slide">
+                <img src="http://www.jammi.lt/images/logo.png">
+                <h2>Jammi</h2>
+                <p>5</p></a>
+                <a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop">Žemėlapis</a>
+            </li>
+            <li><a href="#">
+                <img src="http://www.jammi.lt/images/logo.png">
+                <h2>Jammi</h2>
+                <p>Broken Bells</p></a>
+                <a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop">Žemėlapis</a>
+            </li>
+            <li><a href="#">
+                <img src="http://www.jammi.lt/images/logo.png">
+                <h2>Jammi</h2>
+                <p>Broken Bells</p></a>
+                <a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop">Žemėlapis</a>
+            </li>
+            <li><a href="#">
+                <img src="http://www.jammi.lt/images/logo.png">
+                <h2>Jammi</h2>
+                <p>Broken Bells</p></a>
+                <a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop">Žemėlapis</a>
+            </li>
+            <li><a href="#">
+                <img src="http://www.jammi.lt/images/logo.png">
+                <h2>Jammi</h2>
+                <p>Broken Bells</p></a>
+                <a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop">Žemėlapis</a>
+            </li>
+        </ul>
+    </div>
+    <div data-role="popup" id="purchase" data-theme="d" data-overlay-theme="b" class="ui-content" style="max-width:425px; padding-bottom:2em;">
+        <h3>Žemėlapis - Jammi</h3>
+        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps?t=m&amp;ie=UTF8&amp;ll=54.683793,25.273619&amp;spn=0.007654,0.01929&amp;z=16&amp;output=embed"></iframe><br /><small><a href="https://www.google.com/maps?t=m&amp;ie=UTF8&amp;ll=54.683793,25.273619&amp;spn=0.007654,0.01929&amp;z=16&amp;source=embed" style="color:#0000FF;text-align:left">Žiūrėti didesnį žemėlapio vaizdą</a></small>
+    </div>
+    <!-- popup-comment-write -->
+    <div data-role="popup" id="pop-comment" data-overlay-theme="a" data-theme="a" data-dismissible="false" style="max-width:400px;" class="ui-corner-all">
+        <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+        <form>
+            <div style="padding:10px 20px;">
+                <h3>Parašyk komentarą apie "Jammi"</h3>
+                <label for="com-name" class="ui-hidden-accessible">Vardas</label>
+                <input type="text" name="user" id="com-name" value="" placeholder="Vardas" data-theme="a">
+                <label for="com-mess" class="ui-hidden-accessible">Žinutė:</label>
+                <textarea cols="40" rows="8" name="textarea-1" id="com-mess" value="" placeholder="Žinutė" data-theme="a"></textarea>
+                <button type="submit" data-theme="b" data-icon="check">Pridėti</button>
+            </div>
+        </form>
+    </div>
+    <!-- /popup-comment-write -->
+<!-- /content -->
+<div data-role="footer">
+    <div class="ui-grid-b">
+        <div class="ui-block-a">
+            <p>Sek mumis:</p>
+            <img src="http://m.delfi.lt/misc/crs/mobile/img/follow_ico_fb.png" alt="Facebook" class="img-rounded">
+            <img src="http://m.delfi.lt/misc/crs/mobile/img/follow_ico_twit.png" alt="Twitter" class="img-rounded">
+            <img src="http://m.delfi.lt/misc/crs/mobile/img/follow_ico_rss.png" alt="RSS" class="img-rounded">
+        </div>
+        <div class="ui-block-b"><br>
+            <a href="#kas">Kas yra "Noriu kebabo"?</a><Br/>
+            <a href="#privatumas">Privatumas</a><Br/>
+            <a href="#reklama">Reklama</a>
+        </div>
+        <div class="ui-block-c"><br/>
+            © 2013 Aurimas<Br/>
+            <a href="#teises">Visos teisės saugomos.</a><Br/>
+            <a href="#atsakomybe">Atsakomybės apribojimas. </a>
+        </div>
+    </div>
+</div>
+</div><!-- /page -->
+</body>
+</html>

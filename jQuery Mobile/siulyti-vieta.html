@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex, follow">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pridėti naują vietą - Noriu kebabo!</title>
+    <link rel="stylesheet"  href="css/themes/default/jquery.mobile-1.3.2.min.css">
+    <link rel="stylesheet"  href="css/themes/default/info.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+    <script src="js/jquery.js"></script>
+    <script src="demos/_assets/js/index.js"></script>
+    <script src="js/jquery.mobile-1.3.2.min.js"></script>
+    <script>
+
+	</script>
+</head>
+<body>
+<div data-role="page">
+    <div data-role="header" data-theme="c">
+        <h1>Noriu kebabo!</h1>
+        <a href="#left-panel" data-icon="bars" data-iconpos="notext" data-shadow="false" data-iconshadow="false">Menu</a>
+    </div>
+    <!-- panel -->
+	<div data-role="panel" id="left-panel">
+        <ul data-role="listview" data-theme="d" data-icon="false">
+            <li>
+                <form>
+                    <input type="search" name="search-1" id="search-1" value="" placeholder="Paieška">
+                </form>
+            </li>
+            <li data-role="list-divider">Meniu:</li>
+            <li><a href="index.html">Pagrindinis</a></li>
+            <li><a href="naujausios.html" data-transition="slide">Naujausios</a></li>
+            <li><a href="geriausios.html" data-transition="slide">Geriausios</a></li>
+            <li><a href="siulyti-vieta.html" data-transition="slide">Pasiūlyti vietą</a></li>
+            <li><a href="#">Pranešti netikslumą</a></li>
+            <li><a href="kontaktai.html" data-transition="slide">Kontaktai</a></li>
+            <li data-role="list-divider">Sistema</li>
+            <li><a href="#pop-login" data-rel="popup" data-position-to="window">Prisijungti</a></li>
+            <li><a href="#pop-register" data-rel="popup" data-position-to="window">Registruotis</a></li>
+        </ul>
+	</div>
+    <!-- /panel -->
+    <!-- popup-login -->
+    <div data-role="popup" id="pop-login" data-overlay-theme="a" data-theme="a" data-dismissible="false" style="max-width:400px;" class="ui-corner-all">
+        <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+        <form>
+            <div style="padding:10px 20px;">
+                <h3>Suveskite prisijungimo duomenis</h3>
+                <label for="un" class="ui-hidden-accessible">Vartojojo vardas:</label>
+                <input type="text" name="user" id="un" value="" placeholder="Vartojojo vardas" data-theme="a">
+                <label for="pw" class="ui-hidden-accessible">Slaptažodis:</label>
+                <input type="password" name="pass" id="pw" value="" placeholder="Slaptažodis" data-theme="a">
+                <button type="submit" data-theme="b" data-icon="check">Prisijungti</button>
+            </div>
+        </form>
+    </div>
+    <!-- /popup-login -->
+    <!-- popup-register -->
+    <div data-role="popup" id="pop-register" data-overlay-theme="a" data-theme="a" data-dismissible="false" style="max-width:400px;" class="ui-corner-all">
+        <a href="#" data-rel="back" data-role="button" data-theme="a" data-icon="delete" data-iconpos="notext" class="ui-btn-right">Close</a>
+        <form>
+            <div style="padding:10px 20px;">
+                <h3>Registracija sistemoje</h3>
+                <label for="reg-username" class="ui-hidden-accessible">Vartojojo vardas:</label>
+                <input type="text" name="user" id="reg-username" value="" placeholder="Vartojojo vardas" data-theme="a">
+                <label for="reg-password" class="ui-hidden-accessible">Slaptažodis:</label>
+                <input type="password" name="pass" id="reg-password" value="" placeholder="Slaptažodis" data-theme="a">
+                <label for="reg-email" class="ui-hidden-accessible">El.paštas:</label>
+                <input type="email" data-clear-btn="true" name="email-2" id="reg-email" value="" placeholder="El.pašto adresas" data-theme="a">
+                <button type="submit" data-theme="b" data-icon="check">Registruotis</button>
+            </div>
+        </form>
+    </div>
+    <!-- /popup-register -->
+	<div data-role="content" >
+        <h2>Pridėk naują vietą sistemoje...</h2>
+        <table data-role="table" id="phone-table" data-mode="columntoggle" data-column-btn-theme="a" class="phone-compare ui-shadow table-stroke">
+            <tbody>
+            <tr class="title">
+                <th class="label">Pavadinimas</th>
+                <td><input type="text" data-clear-btn="true" name="text-3" id="text-3" value=""></td>
+            </tr>
+                <tr class="photos">
+                    <th class="label">Vaizdai</th>
+                    <td><a href="#" data-role="button" data-icon="plus" data-iconpos="notext" data-theme="c" data-inline="true">Plus</a></td>
+                </tr>
+            <tr class="desc">
+                <th class="label">Aprašymas</th>
+                <td><textarea cols="40" rows="15" name="textarea-1" id="textarea-1" data-clear-btn="true"></textarea></td>
+            </tr>
+            <tr class="map">
+                <th class="label">Žemėlapis</th>
+                <td><iframe height="100%" width="50%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps?t=m&amp;ie=UTF8&amp;ll=54.683793,25.273619&amp;spn=0.007654,0.01929&amp;z=16&amp;output=embed"></iframe></td>
+            </tr>
+            <tr class="atsil">
+                <th class="label">Adresas</th>
+                    <td><input type="text" data-clear-btn="true" name="text-3" id="text-5" value=""></td>
+            </tr>
+            <tr class="share">
+                <th class="label">Tel. Nr.</th>
+                    <td><input type="tel" data-clear-btn="true" name="tel-2" id="tel-2" value=""></td>
+            </tr>
+            <tr class="mail">
+                <th class="label">El. pašto adresas</th>
+                <td><input type="email" data-clear-btn="true" name="email-2" id="email-2" value=""></td>
+            </tr>
+            </tbody>
+            <tr class="mail">
+                <th class="label"><a href="#" data-role="button" data-mini="true" data-inline="true" data-icon="check" data-theme="b">Pridėti vietą</a></th>
+                <td></td>
+            </tr>
+            </tbody>
+        </table>
+        </div>
+<!-- /content -->
+<div data-role="footer">
+    <div class="ui-grid-b">
+        <div class="ui-block-a">
+            <p>Sek mumis:</p>
+            <img src="http://m.delfi.lt/misc/crs/mobile/img/follow_ico_fb.png" alt="Facebook" class="img-rounded">
+            <img src="http://m.delfi.lt/misc/crs/mobile/img/follow_ico_twit.png" alt="Twitter" class="img-rounded">
+            <img src="http://m.delfi.lt/misc/crs/mobile/img/follow_ico_rss.png" alt="RSS" class="img-rounded">
+        </div>
+        <div class="ui-block-b"><br>
+            <a href="#kas">Kas yra "Noriu kebabo"?</a><Br/>
+            <a href="#privatumas">Privatumas</a><Br/>
+            <a href="#reklama">Reklama</a>
+        </div>
+        <div class="ui-block-c"><br/>
+            © 2013 Aurimas<Br/>
+            <a href="#teises">Visos teisės saugomos.</a><Br/>
+            <a href="#atsakomybe">Atsakomybės apribojimas. </a>
+        </div>
+    </div>
+</div>
+</div><!-- /page -->
+</body>
+</html>
