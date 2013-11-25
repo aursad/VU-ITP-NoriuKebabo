@@ -1,0 +1,50 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="PanoramaApp1.Pages.AddPlacePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d" d:DesignHeight="768" d:DesignWidth="480"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <ImageBrush Stretch="UniformToFill" ImageSource="../PanoramaBackground.png"/>
+        </Grid.Background>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock x:Name="ApplicationTitle" Text="Noriu kababo" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock x:Name="PageTitle" Text="Pridėti naują vietą" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <TextBlock Height="30" HorizontalAlignment="Left" Margin="12,22,0,0" Name="textBlock1" Text="Pavadinimas" VerticalAlignment="Top" />
+            <TextBox Height="72" HorizontalAlignment="Left" Margin="12,44,0,0" Name="textBox1"  VerticalAlignment="Top" Width="444" />
+            <TextBlock Height="30" HorizontalAlignment="Left" Margin="12,114,0,0" Name="textBlock2" Text="Adresas" VerticalAlignment="Top" />
+            <TextBox Height="72" HorizontalAlignment="Left" Margin="12,136,0,0" Name="textBox2"  VerticalAlignment="Top" Width="444" />
+            <TextBlock Height="30" HorizontalAlignment="Left" Margin="12,207,0,0" Name="textBlock3" Text="Telefono numeris" VerticalAlignment="Top" />
+            <TextBox Height="72" HorizontalAlignment="Left" Margin="12,229,0,0" Name="textBox3"  VerticalAlignment="Top" Width="444" />
+            <TextBlock Height="30" HorizontalAlignment="Left" Margin="9,297,0,0" Name="textBlock4" Text="El. paštas" VerticalAlignment="Top" />
+            <TextBox Height="72" HorizontalAlignment="Left" Margin="9,319,0,0" Name="textBox4"  VerticalAlignment="Top" Width="444" />
+            <TextBlock Height="30" HorizontalAlignment="Left" Margin="12,391,0,0" Name="textBlock5" Text="Aprašymas" VerticalAlignment="Top" />
+            <TextBox Height="128" HorizontalAlignment="Left" Margin="12,413,0,0" Name="textBox5"  VerticalAlignment="Top" Width="444" />
+            <Button Content="Pridėti" Height="72" HorizontalAlignment="Left" Margin="12,535,0,0" Name="button1" VerticalAlignment="Top" Width="300" />
+            <Button Content="Išvalyti" Height="72" HorizontalAlignment="Left" Margin="293,535,0,0" Name="button2" VerticalAlignment="Top" Width="160" />
+        </Grid>
+    </Grid>
+ 
+
+</phone:PhoneApplicationPage>

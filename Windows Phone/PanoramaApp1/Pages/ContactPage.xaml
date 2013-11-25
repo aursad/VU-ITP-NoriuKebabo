@@ -1,0 +1,49 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="PanoramaApp1.Pages.ContactPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d" d:DesignHeight="768" d:DesignWidth="480"
+    shell:SystemTray.IsVisible="True" xmlns:my="clr-namespace:Microsoft.Phone.Controls.Maps;assembly=Microsoft.Phone.Controls.Maps">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <ImageBrush Stretch="UniformToFill" ImageSource="../PanoramaBackground.png"/>
+        </Grid.Background>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock x:Name="ApplicationTitle" Text="Noriu kababo" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock x:Name="PageTitle" Text="Kontaktai" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <TextBlock HorizontalAlignment="Right" Margin="0,25,32,0" Name="textBlock1" Text="MB ''Noriu kebabo''" VerticalAlignment="Top" Width="369" Style="{StaticResource PhoneTextExtraLargeStyle}"/>
+            <TextBlock HorizontalAlignment="Left" Margin="78,88,0,0" Name="textBlock2" Text="Saulėkio al. 15-10, LT-10224, Vilnius" VerticalAlignment="Top" Width="319" />
+            <my:Map Height="301" 
+                    Center="54.7237114,25.3370914" 
+                    ZoomLevel="16"
+                    HorizontalAlignment="Left" 
+                    Margin="12,121,0,0" 
+                    Name="map1" 
+                    VerticalAlignment="Top" 
+                    Width="438" />
+            <Button Content="noriu@kababo.lt" Height="72" HorizontalAlignment="Left" Margin="12,428,0,0" Name="button1" VerticalAlignment="Top" Width="438" />
+            <Button Content="+370 600 000 00" Height="72" HorizontalAlignment="Left" Margin="12,488,0,0" Name="button2" VerticalAlignment="Top" Width="438" />
+        </Grid>
+    </Grid>
+
+</phone:PhoneApplicationPage>
