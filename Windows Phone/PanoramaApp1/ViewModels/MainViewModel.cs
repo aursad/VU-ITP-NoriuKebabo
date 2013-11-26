@@ -62,12 +62,12 @@ namespace PanoramaApp1
         {
             // Sample data; replace with real data
             this.Items.Add(new ItemViewModel() { pavadinimas = "Jammi", adresas = "Trakų g. 0, Vilnius", ivertinimas = "5", aprasymas = "Turi buti čia aprašymas"});
-            this.Items.Add(new ItemViewModel() { pavadinimas = "Noriu two", adresas = "Vilniaus g. 10, Kaunas", ivertinimas = "0" });
-            this.Items.Add(new ItemViewModel() { pavadinimas = "Noriu three", adresas = "Klaipėdos g. 2a, Šiauliai", ivertinimas = "0" });
-            this.Items.Add(new ItemViewModel() { pavadinimas = "Noriu four", adresas = "Šilutės pl. 120, Klaipėda", ivertinimas = "0" });
-            this.Items.Add(new ItemViewModel() { pavadinimas = "Noriu five", adresas = "Ukmergės pl. 22, Vilnius", ivertinimas = "0" });
-            this.Items.Add(new ItemViewModel() { pavadinimas = "Noriu six", adresas = "Naugarduko g. 1, Vilnius", ivertinimas = "0" });
-            this.Items.Add(new ItemViewModel() { pavadinimas = "Noriu seven", adresas = "Naugarduko g. 1, Vilnius", ivertinimas = "0" });
+            this.Items.Add(new ItemViewModel() { pavadinimas = "Noriu two", adresas = "Vilniaus g. 10, Kaunas", ivertinimas = "0", aprasymas = "Turi buti čia aprašymas\nTuri buti čia aprašymas\nTuri buti čia aprašymas\n" });
+            this.Items.Add(new ItemViewModel() { pavadinimas = "Noriu three", adresas = "Klaipėdos g. 2a, Šiauliai", ivertinimas = "0", aprasymas = "Turi buti čia aprašymas" });
+            this.Items.Add(new ItemViewModel() { pavadinimas = "Noriu four", adresas = "Šilutės pl. 120, Klaipėda", ivertinimas = "0", aprasymas = "Turi buti čia aprašymas" });
+            this.Items.Add(new ItemViewModel() { pavadinimas = "Noriu five", adresas = "Ukmergės pl. 22, Vilnius", ivertinimas = "0", aprasymas = "Turi buti čia aprašymas" });
+            this.Items.Add(new ItemViewModel() { pavadinimas = "Noriu six", adresas = "Naugarduko g. 1, Vilnius", ivertinimas = "0", aprasymas = "Turi buti čia aprašymas" });
+            this.Items.Add(new ItemViewModel() { pavadinimas = "Noriu seven", adresas = "Naugarduko g. 1, Vilnius", ivertinimas = "0", aprasymas = "Turi buti čia aprašymas" });
             this.Items.Add(new ItemViewModel() { pavadinimas = "Noriu eight", adresas = "Naugarduko g. 1, Vilnius", ivertinimas = "0" });
             this.Items.Add(new ItemViewModel() { pavadinimas = "Noriu nine", adresas = "Naugarduko g. 1, Vilnius", ivertinimas = "0" });
             this.Items.Add(new ItemViewModel() { pavadinimas = "Noriu ten", adresas = "Naugarduko g. 1, Vilnius", ivertinimas = "0" });

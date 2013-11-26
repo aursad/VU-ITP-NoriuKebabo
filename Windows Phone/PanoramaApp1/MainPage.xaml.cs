@@ -41,10 +41,35 @@ namespace PanoramaApp1
                 return;
 
             // Navigate to the new page
-            NavigationService.Navigate(new Uri("/Pages/DetailsPage.xaml?selectedItem=" + listBest.SelectedIndex, UriKind.Relative));
+            NavigationService.Navigate(new Uri("/Pages/Details.xaml?selectedItem=" + listBest.SelectedIndex, UriKind.Relative));
 
             // Reset selected index to -1 (no selection)
             listBest.SelectedIndex = -1;
+        }
+        // Handle selection changed on ListBox
+        private void topListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            // If selected index is -1 (no selection) do nothing
+            if (topList.SelectedIndex == -1)
+                return;
+
+            // Navigate to the new page
+            NavigationService.Navigate(new Uri("/Pages/Details.xaml?selectedItem=" + topList.SelectedIndex, UriKind.Relative));
+
+            // Reset selected index to -1 (no selection)
+            topList.SelectedIndex = -1;
+        }
+        private void newListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            // If selected index is -1 (no selection) do nothing
+            if (newList.SelectedIndex == -1)
+                return;
+
+            // Navigate to the new page
+            NavigationService.Navigate(new Uri("/Pages/Details.xaml?selectedItem=" + newList.SelectedIndex, UriKind.Relative));
+
+            // Reset selected index to -1 (no selection)
+            newList.SelectedIndex = -1;
         }
         private void ReqPlaceClick(object sender, EventArgs e)
         {
