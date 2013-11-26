@@ -3,11 +3,11 @@ Išmaniųjų telefonų programavimas
 <table>
   <tr>
     <td>Dėstytojas: </td>
-    <td><a href-"http://uosis.mif.vu.lt/~meglinskas/">Mindaugas Eglinskas</a></td>
+    <td><a href="http://uosis.mif.vu.lt/~meglinskas/">Mindaugas Eglinskas</a></td>
   </tr>
   <tr>
     <td>Dokumentai:</td>
-    <td><a href-"http://uosis.mif.vu.lt/~meglinskas/m/">PDF</a></td>
+    <td><a href="http://uosis.mif.vu.lt/~meglinskas/m/">PDF</a></td>
   </tr>
   <tr>
     <td>VU MIF, 2013</td>
